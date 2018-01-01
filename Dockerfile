@@ -28,7 +28,7 @@ RUN \
 	pcsc-lite \
 	pcsc-lite-libs && \
  echo "**** compile oscam ****" && \
- bzr branch lp:oscam /tmp/oscam-svn && \
+ git clone https://github.com/nx111/oscam.git /tmp/oscam-svn && \
  cd /tmp/oscam-svn && \
  ./config.sh \
 	--enable all \
